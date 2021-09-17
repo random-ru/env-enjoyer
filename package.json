@@ -1,0 +1,8 @@
+{
+  "name": "env-enjoyer",
+  "version": "1.0.0",
+  "bin": {
+    "env-enjoyer": "index.js"
+  },
+  "license": "MIT"
+}
