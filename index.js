@@ -6,7 +6,11 @@ const fs = require("fs");
 
 const filePath = path.resolve(process.cwd(), ".env");
 
-const SEPARATOR = "228huipizda228";
+const SEPARATOR = process.env.SEPARATOR;
+
+if (!SEPARATOR) {
+  throw new Error("SEPARATOR is required");
+}
 
 const envSource = fs.readFileSync(filePath, { encoding: "utf8" });
 
