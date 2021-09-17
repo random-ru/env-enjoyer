@@ -14,7 +14,7 @@ if (!SEPARATOR) {
 
 const envSource = fs.readFileSync(filePath, { encoding: "utf8" });
 
-const res = envSource.split("\n").join("").trim().split(SEPARATOR).join("\n");
+const res = envSource.trim().split(SEPARATOR).join("\n");
 
 console.log(res);
 
