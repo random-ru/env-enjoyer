@@ -6,7 +6,7 @@ const fs = require("fs");
 
 const filePath = path.resolve(process.cwd(), ".env");
 
-const SEPARATOR = "$$$###@@@";
+const SEPARATOR = "228huipizda228";
 
 const envSource = fs.readFileSync(filePath, { encoding: "utf8" });
 
